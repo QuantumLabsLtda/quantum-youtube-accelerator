@@ -2,7 +2,7 @@
     "name": "Quantum Youtube Accelerator",
     "manifest_version": 2,
     "description": "Accelerate your YouTube Videos",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": [
         "unlimited_storage",
         "notifications",

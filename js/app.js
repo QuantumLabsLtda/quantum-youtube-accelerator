@@ -6,7 +6,7 @@ $(document).ready(function(){
             $("#goToYoutube").show();
             $("#goToYoutube > h6").html("Ir para YouTube");            
         }
-        else if(tablink.indexOf('watch?v=') < 0){
+        else if(tablink.indexOf('youtube.com') > 0 && tablink.indexOf('watch?v=') < 0){
             $("#adjustYoutube").hide();
             $("#goToYoutube").show();
             $("#goToYoutube > h6").html("Aguardando Seleção do Vídeo");
