@@ -1,0 +1,34 @@
+{
+    "name": "Quantum Youtube Accelerator",
+    "manifest_version": 2,
+    "description": "Accelerate your YouTube Videos",
+    "version": "0.1",
+    "permissions": [
+        "unlimited_storage",
+        "notifications",
+        "contextMenus",
+        "cookies",
+        "storage",
+        "idle",
+        "tabs",
+        "activeTab"
+    ],
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts":[
+        {
+            "matches":[
+                "*://*.youtube.com.br/*",
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "js/jquery-3.3.1.min.js",
+                "js/app.js"
+            ],
+            "run_at": "document_end",
+            "persistent": false
+        }
+    ]
+}
